@@ -1,4 +1,4 @@
-package com.itheima.a04objectdemo1;
+package com.itheima.a04objectDemo1;
 
 import java.util.StringJoiner;
 
