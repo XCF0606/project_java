@@ -27,8 +27,8 @@ public class DateDemo2 {
         Date d3 = new Date();
 
         //随机赋值两个数
-        d2.setTime(r.nextInt());
-        d3.setTime(r.nextInt());
+        d2.setTime(Math.abs(r.nextInt()));
+        d3.setTime(Math.abs(r.nextInt()));
 
         long time1 = d2.getTime();
         long time2 = d3.getTime();
