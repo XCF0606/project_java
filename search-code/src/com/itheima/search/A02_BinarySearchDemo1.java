@@ -14,6 +14,7 @@ public class A02_BinarySearchDemo1 {
 
         System.out.println(getArrayIndex(arr, number));
 
+
     }
 
     //需求接收的参数
