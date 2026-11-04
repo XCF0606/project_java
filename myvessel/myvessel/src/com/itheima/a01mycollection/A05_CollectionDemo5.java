@@ -1,8 +1,7 @@
-package com.itheima.mycollection;
+package com.itheima.a01mycollection;
 
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.function.Consumer;
 
 public class A05_CollectionDemo5 {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.itheima.mycollection;
+package com.itheima.a01mycollection;
 
 import java.util.Objects;
 
