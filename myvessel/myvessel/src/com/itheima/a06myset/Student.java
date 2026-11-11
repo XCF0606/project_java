@@ -2,7 +2,7 @@ package com.itheima.a06myset;
 
 import java.util.Objects;
 
-public class Student {
+public class Student implements Comparable<Student> {
     private String name;
     private int age;
 
@@ -51,15 +51,19 @@ public class Student {
         return "Student{name = " + name + ", age = " + age + "}";
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (o == null || getClass() != o.getClass()) return false;
-        Student student = (Student) o;
-        return age == student.age && Objects.equals(name, student.name);
-    }
 
+    //this：表示当前要添加的元素
+    //o表示已经在红黑树存在的元素
+
+    //返回值
+    //负数：表示当前要添加的元素是小的，存左边
+    //正数：表示当前要添加的元素是大的，存右边
+    //0:表示当前添加的元素已经存在，舍弃
     @Override
-    public int hashCode() {
-        return Objects.hash(name, age);
+    public int compareTo(Student o) {
+        System.out.println("this：" + this);
+        System.out.println("o：" + o);
+        //指定排序规则，按照年龄升序进行排序
+        return this.getAge() - o.getAge();
     }
 }
